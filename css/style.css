@@ -87,7 +87,6 @@ button {
     background-image: url('../images/paper-book.avif');
     background-position: 50%;
     padding: 1rem;
-    cursor: pointer;
     color: #0d0d0d;
     transition: all .2s;
 }
@@ -120,7 +119,6 @@ button:active {
 
 #bot-bar i {
     color: #ccc;
-    cursor: pointer;
     transition: .5s ease;
 }
 
@@ -165,7 +163,6 @@ button:active {
     position: absolute;
     left: 90%;
     bottom: 84%;
-    cursor: pointer;
     transition: .2s ease;
 }
 
@@ -233,7 +230,6 @@ button:active {
 .book-indice li {
     list-style-type: none;
     margin: 1rem;
-    cursor: pointer;
     transition: .2s ease;
 }
 
@@ -267,7 +263,6 @@ button:active {
     font-style: italic;
     text-decoration: underline black;
     padding: .2rem;
-    cursor: pointer;
 }
 
 .book-text p{
@@ -449,7 +444,6 @@ button:active {
     width: 100px;
     transform: rotate(-10deg);
     transition: .5s ease;
-    cursor: pointer;
 }
 
 .images-book {
@@ -466,7 +460,6 @@ button:active {
 .choice-button img {
     width: 140px;
     transition: .5s ease;    
-    cursor: pointer;
 }
 
 .choice-button img:hover {
@@ -476,7 +469,6 @@ button:active {
 .register-button img{
     width: 160px;
     transition: .5s ease;    
-    cursor: pointer;
 }
 
 .register-button img:hover {
@@ -486,7 +478,6 @@ button:active {
 .music-button img{
     width: 100px;
     transition: .5s ease;
-    cursor: pointer;
 }
 
 .music-button img:hover{
@@ -502,7 +493,6 @@ button:active {
 .pena-btn button {
     padding: 1rem;
     border: none;
-    cursor: pointer;
 }
 
 .pena-condenacao {

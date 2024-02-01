@@ -29,6 +29,9 @@ const defenseDocument = document.querySelector('.defense-document')
 const buttonDefense = document.querySelector('.btn-defense')
 
 // variavel audio
+const maleVoice = new Audio('../audio/male-voice.mp3')
+const femaleVoice = new Audio('../audio/female-voice-angry.mp3')
+
 const audioClose = document.querySelector('.audio-close')
 const audioOpen = document.querySelector('.audio-open')
 const metalSound = document.querySelector('.metal-sound')
@@ -148,6 +151,7 @@ buttonAcusation.addEventListener('click', () => {
         acusationDocument.style.display = 'flex'
         defenseDocument.style.display = 'none'
         audioOpen.play()
+        femaleVoice.play()
     } else {
         acusationDocument.style.display = 'none'
         audioClose.play()
@@ -159,6 +163,7 @@ buttonDefense.addEventListener('click', () => {
         defenseDocument.style.display = 'flex'
         acusationDocument.style.display = 'none'
         audioOpen.play()
+        maleVoice.play()
     } else {
         defenseDocument.style.display = 'none'
         audioClose.play()

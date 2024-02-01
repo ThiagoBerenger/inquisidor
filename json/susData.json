@@ -1,0 +1,45 @@
+
+   [     
+        {
+            "name": "Matheo",
+            "age": "22 anos",
+            "work": "Ferreiro",
+            "religion": "Católico Apostólico Romano",
+            "acusation": "Heresia",
+            "sonOf": "Ângelo e Tereza"
+        },
+
+        {
+            "name": "Luc",
+            "age": "32 anos",
+            "work": "Carpinteiro",
+            "religion": "Católico Apostólico Romano",
+            "acusation": "Heresia",
+            "sonOf": "Joaquim e Maria"
+        },
+
+        {
+            "name": "Jaques",
+            "age": "21 anos",
+            "work": "Desempregado",
+            "religion": "Católico Apostólico Romano",
+            "acusation": "Satanismo",
+            "sonOf": "Alexandre e Maria"
+        },
+
+        {
+            "name": "Matilda",
+            "age": "19 anos",
+            "work": "Cuida da Casa",
+            "religion": "Católico Apostólico Romano",
+            "acusation": "Bruxaria",
+            "sonOf": "William e Beatrice"
+        }
+
+    ]
+   
+    
+
+
+
+

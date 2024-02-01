@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquisidor</title>
+    <link rel="icon" href="images/fav.png">
+    <!-- css -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- script -->
+    <script type="module" src="script/script.js" defer></script>
+</head>
+<body>
+    <div id="hero">
+
+        <h1>Inquisidor</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid hic</p>
+
+        <div id="screen">
+            <!-- Nome e Socre do jogador -->
+            <div class="top-details">
+                <div class="player-name">
+                    <h1>player name</h1>
+                    <p>Profissão: Inquisidor</p>
+                </div>
+                <div class="player-score">
+                    <h1>0 Damnation</h1>
+                    <p>0 Absolution</p>
+                </div>
+            </div>
+
+            <!-- Centro da tela com Info e perguntas -->
+            <div id="information-suspect">
+                <div class="info">
+                    <h1>O acusado entra na sala</h1>
+                    <div class="suspect-details"> 
+                        <p>O Acusado entra no tribunal da Santa Inquisição trêmulo, seus olhos miram o chão.</p>
+                    </div>
+                </div>
+
+                <!-- perguntas -->
+                <div id="questions">
+                    <button class="btn-inspectDoc">
+                        Inspecionar Documento
+                    </button>
+                    <button class="btn-acusation">
+                        Ler a Acusação
+                    </button>
+                    <button class="btn-mission">
+                        <span class="mission-response">...</span>
+                    </button>
+                    <button class="btn-defense">
+                        Ler a Defesa
+                    </button>
+                </div>              
+            </div>
+
+            <!-- Missão Principal -->
+            <div id="main-mission">
+                <div class="mission-content">
+                    <div class="mission-title">
+                        <img src="images/carimbo.png" alt="carimbo">
+                        <h1>Missão Principal</h1>
+                    </div>
+                    <h3>Descubra quem matou Francesco Galgani.</h3>
+                    <p>Questione todos os investigados sobre o caso, 
+                        talvez saibam algo a respeito.</p>
+                    <p>Encontrado multilado na praça do Patriarca.</p>
+                        <br>
+                    <div>
+                        <h4>Morto por Giuseppe, o mendigo</h4>
+                        <h4>Morto por Pagãos</h4>
+                        <h4>Morto por Hereges</h4>
+                        <h4>Morto por Gnósticos</h4>
+                        <h4>Morto por Satanístas</h4>
+                    </div>
+                    <img src="images/x-icon.png" alt="x-icon" class="close-mission">
+                </div>
+                 <!-- francesco img -->
+                 <img src="images/characters/francesco_galgani.png" alt="francesco-illustration" class="francesco-img">
+            </div>
+
+            <!-- Documento do Acusado-->
+
+            <div class="suspect-document">
+                <div class="document-text">
+                    <h1>Documentum</h1>
+                    <p><span class="name-response"></span>, Filho de <span class="son-response"></span>, <span class="age-response"></span> anos, trabalha como <span class="work-response"></span>. <br><br> <span class="religion-response"></span>.</p>
+                </div>
+                
+                 <button class="close-doc">Guardar Documento</button>
+                
+            </div>
+
+            <!-- Acusação -->
+
+            <div class="acusation-document">
+                <div class="acusation-text">
+                    <h1>Acusação</h1>
+                    <p class="acusation-response"></p>
+                    <img src="" alt="character" class="acusator-character">
+                </div>
+                
+                <button class="close-acusation">Guardar Documento</button>
+            </div>
+
+            <!-- Defesa -->
+
+            <div class="defense-document">
+                <div class="defense-text">
+                    <h1>Defesa</h1>
+                    <p class="defense-response"></p>
+                    <img src="" alt="character" class="picture-character">
+                </div>                
+                <button class="close-defense">Guardar Documento</button>
+            </div>
+
+            <!-- código penal inquisição -->
+
+            <div id="book">
+                <div class="book-content">
+                    <audio src="audio/open book.MP3" class="audio-open"></audio>
+                    <audio src="audio/close book.MP3" class="audio-close"></audio>
+                        <div class="book-title">
+                            <h2>Guia do Inquisidor</h2>
+                            <p>In nomine Patris et Filii et Spiritus Sancti</p>
+                        </div>
+
+                    <div class="book-indice">
+                        <h3>Crimes e Castigos</h3>
+                        <ul>
+                            <li>Heresia</li>
+                            <li>Apostasia</li>
+                            <li>Blasfêmia</li>
+                            <li>Feitiçaria</li>
+                            <li>Satanismo</li>
+                        </ul>
+                        <img src="images/inquisition-symbol.png" alt="inquisition-symbol">
+                    </div>
+                    
+                    <!-- guia do inquisidor -->
+                    <div class="book-text">
+                        <p>Para defender os filhos de Deus da mentira herética e preservar a verdadeira doutrina da Santa Igreja, foi instaurada esta instituição para julgar católicos suspeitos de pecados contra a fé.</p>
+                        <br>
+                        <p>Há muitos relatos de senhores Feudais e até reis, condenando pessoas na fogueira sem o Pricípio de Inocencia. É necessária a Intervenção da Igreja para defender os inocentes.</p>
+
+                        <h3>Heresia</h3>
+                        <p>"uma espécie de infidelidade de homens que, tendo professado a fé de Cristo, corrompiam seus dogmas". <br><br> Santo Tomás de Aquino</p>
+
+                        <h4>Iconoclastia ou Iconoclasmo</h4>
+                        <p>Rejeição dos ícones religiosos (Pinturas, ícones, estátuas)</p>
+
+                        <h4>Catarismo</h4>
+                        <p>Os cátaros negam que Jesus poderia encarnar-se, rejeitam sua Ressureição, o simbolo da cruz e os Sacramentos da Santa Igreja. <br> Condenam tudo que está ligado a carne, desde os alimentos para o próprio sustento até relações sexuais. <br> Estes se "redimem" às portas da morte numa prática suicída chamada endura.</p>
+
+                        <h4>Bogomilismo</h4>
+                        <p>Separam o Deus criador do espírito e o Deus criador da matéria, sendo este último considerado de natureza malévola. Rejeitam todos os Sacramentos da Santa Igreja, assim como relíquias e uso de objetos materiais de veneração. <br> Ceticismo em relação ao Matrimônio.</p>
+
+                        <h4>Marcionismo</h4>
+                        <p>Rejeitam o Antigo Testamento como ultrapassado. <br> O Deus da lei, o Demiurgo, que seria o deus do Antigo Testamento, e o Deus do Amor, revelado por Jesus Cristo. <br> Acreditam no mesmo dualismo que os gnósticos, dizem que a matéria é antagônica do bem.</p>
+
+                        <h4>Maniqueísmo</h4>
+                        <p>Filosofia religiosa sincrética e dualísica, acreditam que a matéria é intrinsecamente má, e o espírito, intrisecamente bom.</p>
+                
+                        <h3>Sobre a Gnose</h3>
+
+                        <div class="images-book">
+                            <img src="images/Abraxas_gem.png" alt="Abraxas">
+                            <img src="images/abraxas_desenho.png" alt="abraxas draw">
+                        </div>
+
+                        <p>Há de se ter um cuidado especial com a Gnose</p>
+
+                        
+                    </div>
+
+                </div>  
+            </div>
+
+            <!-- aba de escolhas -->
+
+            <div id="choice-window">
+                <audio src="audio/metal sound.mp3" class="metal-sound"></audio>
+                <h1>DEFINIR PENA</h1>
+                <div class="pena-btn">
+                    <button>Rosário</button>
+                    <button>Confissão</button>
+                    <button>Peregrinação</button>
+                    <button>Açoite</button>
+                    <button>Prisão</button>
+                    <button>Fogueira</button>
+                </div>
+                <button>Voltar</button>
+            </div>
+
+            <div id="register-window">
+                <div class="register-content">
+                    <h3>Carta Oficial do Bispo Dom Tomé</h3>
+                    <br>
+                    <p>Saudações, <span>Nome do Jogador</span></p>
+                    <br> <br>
+                    <h4>Descobrir o(s) assassino(s) de Francesco Galgani e fazer cumprir como manda a lei.</h4>
+                    <br>
+                    <p>O corpo do falecido foi encontrado multilado na praça às 4:00h por um mendigo que não sabemos o nome, afinal é demência. Comerciantes locais afirmam que seu nome é Giuseppe, e no passado fora um humilde filho de lavrador, porém devido a uma série de traumas ele se tornara um pedinte que se encontra na miséria.</p>
+                    <br>
+                    <p>No começo, seu antecessor Dom Henrique acreditava que Giuseppe não era o assasino. Apesar do Rei pedir a morte do mendigo, Dom Henrique hesitava, afinal não havia provas da culpa. "Mas não há provas da inocencia", disse o rei.</p>
+                    <br>
+                    <p>Em resumo, Dom Henrique morrera mês passado e o senhor foi escolhido para resolver este caso. Se, assim como falecido Dom Henrique (que Deus o tenha) acredita que Giuseppe é inocente, então é melhor trabalhar rápido, pois não creio que o rei Henrique II o guardará muito tempo na cadeia. Afinal, é o povo que pede a morte do demente e o rei não terá paciência para outra revolta popular.</p>
+                    <br>
+                    <p>Francesco Galgani, filho de Gemma e Francesco, tinha onze anos e era um filho exemplar, segundo sua mãe.</p>
+                    <br>
+                    <p>Envie-me o relatório após a conclusão do caso</p>
+                    <br><br>
+                    
+                    <img src="images/carimbo.png" alt="carimbo" width="100px">
+
+                </div>
+            </div>
+           
+            <!-- barra inferior -->
+            <div id="bot-bar">
+                <div class="book-button">
+                    <img src="images/medievo-book.png" alt="medievo-book">
+                </div>
+
+                <div class="choice-button">
+                    <img src="images/justice-symbol.png" alt="justice-symbol">
+                </div>
+
+                <div class="register-button">
+                    <img src="images/register-icon.png" alt="register-icon">
+                </div>
+
+                <div class="music-button">
+                    <img src="images/bard.png" alt="bard">
+                    <audio src="audio/soundtrack/Anima Folk.mp3" class="main-music" loop></audio>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

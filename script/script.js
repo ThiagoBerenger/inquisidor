@@ -56,7 +56,7 @@ const satanismLink = document.querySelector('.satanism');
      acusationDocument.style.display = 'none'
      defenseDocument.style.display = 'none'
      registerWindow.style.display = 'none'
-     missionWindow.style.display = 'none'
+     missionWindow.style.display = 'flex'
     //  mainMusic.play()
  })
 
@@ -141,7 +141,7 @@ witchcraftLink.addEventListener('click', () => {
 
 satanismLink.addEventListener('click', () => {
     const satanismChapter = document.querySelector('.satanism-chapter')
-    satanismChapter.scrollIntoView({behavior: 'smooth'})
+    satanismChapter.scrollIntoView({ behavior: 'smooth' })
 });
 
 
@@ -281,14 +281,6 @@ function missionOne() {
 
     pictureCharacter.src = characters[0].picture 
     acusatorCharacter.src = characters[0].acusator 
-}
-
-function scrollToChapter(chapterSelector) {
-    const chapterElement = document.querySelector(chapterSelector);
-    if (chapterElement) {
-        const h3Element = chapterElement.parentElement.querySelector('h3');
-        h3Element.scrollIntoView({ behavior: 'smooth' });
-    }
 }
 
 startGame()

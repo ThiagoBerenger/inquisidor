@@ -182,6 +182,16 @@ button:active {
     top: 18rem;
 }
 
+.hypothesis-div {
+    border: 1px dotted black;
+    padding: 1.4rem;
+    position: absolute;
+    right: 16rem;
+    top: 8rem;
+    line-height: 1.5rem;
+}
+
+
 /* book */
 
 #book {
@@ -192,7 +202,8 @@ button:active {
     height: 60%;
     width: 30%;
     border-right: 12px solid #523211;
-    overflow: auto;
+    overflow-y: auto;
+    overscroll-behavior: contain;
 }
 
 .book-title {

@@ -11,8 +11,14 @@ const missionWindow = document.querySelector('#main-mission')
 const missionButton = document.querySelector('.btn-mission')
 const closeMission = document.querySelector('.close-mission')
 
+// register =
 const registerWindow = document.querySelector('#register-window')
 const registerButton = document.querySelector('.register-button')
+const registerLetters = document.querySelector('.register-letters')
+const letterWindow1 = document.querySelector('.letter-window-1')
+const registerIndex = document.querySelector('.register-index')
+const letter1 = document.querySelector('.letter-1')
+const closeLetter = document.querySelector('.close-letter')
 
 const suspectDocument = document.querySelector('.suspect-document')
 const buttonInfo = document.querySelector('.btn-inspectDoc')
@@ -57,7 +63,7 @@ const satanismLink = document.querySelector('.satanism');
      defenseDocument.style.display = 'none'
      registerWindow.style.display = 'none'
      missionWindow.style.display = 'none'
-    //  mainMusic.play()
+     mainMusic.play()
  })
 
 
@@ -117,6 +123,8 @@ missionButton.addEventListener('click', () => {
     }
 })
 
+// register ========
+
 registerButton.addEventListener('click', () => {
     if(registerWindow.style.display === 'none') {
         registerWindow.style.display = 'flex'
@@ -126,6 +134,17 @@ registerButton.addEventListener('click', () => {
         audioClose.play()
     }
 })
+
+letter1.addEventListener('click', () => {
+    registerIndex.style.display = 'none'
+    letterWindow1.style.display = 'flex'
+})
+
+closeLetter.addEventListener('click', () => {
+    letterWindow1.style.display = 'none'
+    registerIndex.style.display = 'flex'
+})
+
 
 // capitulos livro
 

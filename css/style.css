@@ -251,6 +251,14 @@ button:active {
     text-align: center;
 }
 
+.punishment {
+    color: red;
+    font-style: italic;
+    text-decoration: underline black;
+    padding: .2rem;
+    cursor: pointer;
+}
+
 .book-text p{
     padding: 2rem 2.5rem 0 2.5rem;
     gap: 12px;

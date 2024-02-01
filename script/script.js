@@ -37,6 +37,11 @@ const musicButton = document.querySelector('.music-button')
 const mainMusic = document.querySelector('.main-music')
 // ----------
 
+// capitulos 
+const heresyLink = document.querySelector('.heresy');
+const witchcraftLink = document.querySelector('.witchcraft');
+const satanismLink = document.querySelector('.satanism');
+
 
 // iniciação
 
@@ -118,6 +123,24 @@ registerButton.addEventListener('click', () => {
         audioClose.play()
     }
 })
+
+// capitulos livro
+
+heresyLink.addEventListener('click', () => {
+    const hereticsChapter = document.querySelector('.heretics-chapter')
+    hereticsChapter.scrollIntoView({ behavior: 'smooth' })
+});
+
+witchcraftLink.addEventListener('click', () => {
+    const witchcraftChaper = document.querySelector('.witchcraft-chapter')
+    witchcraftChaper.scrollIntoView({ behavior: 'smooth' })
+});
+
+satanismLink.addEventListener('click', () => {
+    const satanismChapter = document.querySelector('.satanism-chapter')
+    satanismChapter.scrollIntoView({behavior: 'smooth'})
+});
+
 
 buttonAcusation.addEventListener('click', () => {
 
@@ -253,6 +276,14 @@ function missionOne() {
 
     pictureCharacter.src = characters[0].picture 
     acusatorCharacter.src = characters[0].acusator 
+}
+
+function scrollToChapter(chapterSelector) {
+    const chapterElement = document.querySelector(chapterSelector);
+    if (chapterElement) {
+        const h3Element = chapterElement.parentElement.querySelector('h3');
+        h3Element.scrollIntoView({ behavior: 'smooth' });
+    }
 }
 
 startGame()

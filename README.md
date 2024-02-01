@@ -1,3 +1,3 @@
 # inquisidor
-try now: https://thiagoberenger.github.io/inquisitor/
+try now: https://thiagoberenger.github.io/inquisidor/
 choice game

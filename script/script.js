@@ -49,14 +49,14 @@ const satanismLink = document.querySelector('.satanism');
 // iniciação
 
  document.addEventListener('DOMContentLoaded', () => {
-     information.style.display = 'flex'
+     information.style.display = 'none'
      bookOpen.style.display = 'none'
-     choiceWindow.style.display = 'none'
+     choiceWindow.style.display = 'flex'
      suspectDocument.style.display = 'none'
      acusationDocument.style.display = 'none'
      defenseDocument.style.display = 'none'
      registerWindow.style.display = 'none'
-     missionWindow.style.display = 'flex'
+     missionWindow.style.display = 'none'
     //  mainMusic.play()
  })
 

@@ -7,8 +7,12 @@
     <link rel="icon" href="images/fav.png">
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="css/animation.css">
     <!-- script -->
-    <script type="module" src="script/script.js" defer></script>
+    <script src="script/script.js" defer></script>
+    <!-- sentence -->
+    <script src="script/sentence.js" defer></script>
 </head>
 <body>
     <div id="hero">
@@ -60,11 +64,9 @@
                         <h1>Missão Principal</h1>
                     </div>
                     <h3>♰ Descubra quem matou Guilhermo Galgani ♰</h3>
-                    <p>Questione todos os investigados sobre o caso, 
-                        talvez saibam algo a respeito.</p>
                     <p>Se dependesse do rei, o mendigo já estaria morto e o caso encerrado.</p>
                     <p>O garoto foi encontrado multilado na praça do Patriarca.</p>
-                        <br> <br>
+                    
 
                     <div class="hypothesis-div">
                         <h4 class="hypothesis-giuseppe">Morto por Giuseppe</h4>
@@ -215,14 +217,17 @@
                 <audio src="audio/metal sound.mp3" class="metal-sound"></audio>
                 <h1>DEFINIR PENA</h1>
                 <div class="pena-btn">
-                    <button>Rosário</button>
-                    <button>Confissão</button>
-                    <button>Peregrinação</button>
-                    <button>Açoite</button>
-                    <button>Prisão</button>
-                    <button>Fogueira</button>
+                    <button class="rosary">Rosário</button>
+                    <button class="confession">Confissão</button>
+                    <button class="peregrination">Peregrinação</button>
+                    <button class="scourge">Açoite</button>
+                    <button class="prision">Prisão</button>
+                    <button class="burn">Fogueira</button>
                 </div>
-                <button>Voltar</button>
+                    <div class="pena-condenacao">
+                        <button class="pena-back-btn">Voltar</button>
+                        <button class="condemn-btn">Condenar</button>
+                    </div>
             </div>
 
             <div id="register-window">

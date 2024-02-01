@@ -502,6 +502,33 @@ button:active {
 .pena-btn button {
     padding: 1rem;
     border: none;
-    background-color: bisque;
     cursor: pointer;
+}
+
+.pena-condenacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.pena-condenacao button {
+    padding: 1rem 2rem;
+    background-image: none;
+    border: 1px solid black;
+    transition: .2s ease;
+}
+
+.pena-back-btn:hover {
+    
+    border: 1px solid white;
+}
+
+.condemn-btn {
+    background-color: #0d0d0d;
+    color: white;
+}
+
+.condemn-btn:hover {
+    color: white;
+    border: 1px solid red;
 }

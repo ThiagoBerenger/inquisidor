@@ -160,8 +160,10 @@ choiceButton.addEventListener('click', () => {
   musicButton.addEventListener('click', () => {
     if(mainMusic.paused) {
         mainMusic.play()
+        musicButton.style.filter = "grayscale(100%)"
     } else {
         mainMusic.pause()
+        musicButton.style.filter = "grayscale(0%)"
     }
   })
 

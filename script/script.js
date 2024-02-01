@@ -49,9 +49,9 @@ const satanismLink = document.querySelector('.satanism');
 // iniciação
 
  document.addEventListener('DOMContentLoaded', () => {
-     information.style.display = 'none'
+     information.style.display = 'flex'
      bookOpen.style.display = 'none'
-     choiceWindow.style.display = 'flex'
+     choiceWindow.style.display = 'none'
      suspectDocument.style.display = 'none'
      acusationDocument.style.display = 'none'
      defenseDocument.style.display = 'none'
@@ -230,7 +230,7 @@ const characters = [
         picture: "./images/characters/matheo.png",
         acusator: "./images/characters/matheo-acused.png",
 
-        mainMission: 'Perguntar sobre Francesco e Giuseppe',
+        mainMission: 'Perguntar sobre Guilhermo e Giuseppe',
 
         mainDialogue: "Eu nunca ouvi falar desse garoto, que Deus o tenha, mas Giuseppe cresceu na mesma vila que eu. Ele teria se tornado um homem comum se não fosse a morte de seus pais aos 11 anos. Acho que ambos foram tísicos... acontece."
     },

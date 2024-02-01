@@ -5,6 +5,7 @@ const scourge = document.querySelector('.scourge')
 const prision = document.querySelector('.prision')
 const burn = document.querySelector('.burn')
 
+const backButton = document.querySelector('.pena-back-btn')
 
 
 // eventos
@@ -30,6 +31,11 @@ prision.addEventListener('click', () => {
 
 burn.addEventListener('click', () => {
     selectPunishment(burn)
+})
+
+backButton.addEventListener('click', () => {
+    information.style.display = 'flex'
+    choiceWindow.style.display = 'none'
 })
 
 

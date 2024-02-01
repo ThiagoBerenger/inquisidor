@@ -49,7 +49,7 @@ const mainMusic = document.querySelector('.main-music')
      defenseDocument.style.display = 'none'
      registerWindow.style.display = 'none'
      missionWindow.style.display = 'none'
-     mainMusic.play()
+    //  mainMusic.play()
  })
 
 

@@ -309,11 +309,6 @@ button:active {
     overflow: auto;
 }
 
-#register-window img {
-    width: 100px;
-    padding-top: 2rem;
-}
-
 #register-window h3 {
     text-align: center;
     margin-bottom: 2rem;
@@ -325,6 +320,12 @@ button:active {
     font-size: 18px;
     padding: 0rem 0 0 2rem;
     width: 80%;
+}
+
+.register-index img{
+ width: 100px;
+ align-self: center;
+ margin: 2rem;
 }
 
 .register-letters h4{
@@ -339,10 +340,14 @@ button:active {
 }
 
 .close-letter {
-    position: absolute;
-    top: 52rem;
-    left: 14rem;
     transition: .5s ease;
+    align-self: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.close-letter img {
+    width: 100px;
+    opacity: 90%;
 }
 
 .close-letter:hover {
@@ -357,10 +362,11 @@ button:active {
     width: 70%;
 }
 
-.register-content img {
-    align-self: center;
-    padding-bottom: 4rem;
-    opacity: 90%;
+.giuseppe-img {
+    width: 200px;
+    position: absolute;
+    right: 2.2rem;
+    top: 6rem;
 }
 
 #register-window::-webkit-scrollbar {

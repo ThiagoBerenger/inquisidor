@@ -21,6 +21,8 @@ const registerIndex = document.querySelector('.register-index')
 const letter1 = document.querySelector('.letter-1')
 const letter2 = document.querySelector('.letter-2')
 const closeLetter = document.querySelector('.close-letter')
+const closeLetter2 = document.querySelector('.close-letter-2')
+
 
 const suspectDocument = document.querySelector('.suspect-document')
 const buttonInfo = document.querySelector('.btn-inspectDoc')
@@ -148,9 +150,8 @@ letter2.addEventListener('click', () => {
 })
 
 closeLetter.addEventListener('click', () => {
-    closeMessage(letterWindow1)
-    closeMessage(letterWindow2)
-    pencilSound.play()
+    closeAllLetters(closeLetter, letterWindow1)
+    closeAllLetters(closeLetter2, letterWindow2)
 })
 
 function openLetter(element) {
@@ -158,11 +159,14 @@ function openLetter(element) {
     registerIndex.style.display = 'none'
 }
 
-function closeMessage(letter) {
-    letter.style.display = 'none'
-    registerIndex.style.display = 'flex'
+function closeAllLetters(button, letter) {
+    button.addEventListener('click', () => {
+        letter.style.display = 'none'
+        registerIndex.style.display = 'flex'
+        pencilSound.play()
+    })
 }
-
+ 
 
 // capitulos livro
 

@@ -16,8 +16,10 @@ const registerWindow = document.querySelector('#register-window')
 const registerButton = document.querySelector('.register-button')
 const registerLetters = document.querySelector('.register-letters')
 const letterWindow1 = document.querySelector('.letter-window-1')
+const letterWindow2 = document.querySelector('.letter-window-2')
 const registerIndex = document.querySelector('.register-index')
 const letter1 = document.querySelector('.letter-1')
+const letter2 = document.querySelector('.letter-2')
 const closeLetter = document.querySelector('.close-letter')
 
 const suspectDocument = document.querySelector('.suspect-document')
@@ -138,15 +140,28 @@ registerButton.addEventListener('click', () => {
 })
 
 letter1.addEventListener('click', () => {
-    registerIndex.style.display = 'none'
-    letterWindow1.style.display = 'flex'
+    openLetter(letterWindow1)
+})
+
+letter2.addEventListener('click', () => {
+    openLetter(letterWindow2)
 })
 
 closeLetter.addEventListener('click', () => {
-    letterWindow1.style.display = 'none'
-    registerIndex.style.display = 'flex'
+    closeMessage(letterWindow1)
+    closeMessage(letterWindow2)
     pencilSound.play()
 })
+
+function openLetter(element) {
+    element.style.display = 'flex'
+    registerIndex.style.display = 'none'
+}
+
+function closeMessage(letter) {
+    letter.style.display = 'none'
+    registerIndex.style.display = 'flex'
+}
 
 
 // capitulos livro
@@ -248,7 +263,7 @@ const characters = [
         acusation: "Fui encomendar alguns garfos de ferro com Matheo. Quando lá cheguei, o encontrei conversando com Jacques, o vagabundo. O ferreiro afirmava que Jesus nasceu humano, e só após o batismo se tornaria divino. Achei curioso, então n'outro dia fui consultar o padre que instruiu-me a delatar a heresia.",
 
         defense: 'Mas todos nós sabemos que Jesus é cem por cento homem! o próprio padre disse isso no domingo passado! E um conhecido meu, que por sinal é muito inteligente, me ensinou que foi só após batismo que Ele recebeu a divindade.',
-        
+
         sonOf: "Ângelo e Tereza (falecidos)",
 
         picture: "./images/characters/matheo.png",

@@ -327,13 +327,14 @@ button:active {
     width: 80%;
 }
 
-.register-letters {
+.register-letters h4{
     border-bottom: solid 1px black;
     transition: .5s ease;
+    line-height: 32px;
 }
 
-.register-letters:hover {
-    transform: translateY(-5px);
+.register-letters h4:hover {
+    transform: translateX(-5px);
     background-color: rgba(255, 0, 0, 0.473);
 }
 

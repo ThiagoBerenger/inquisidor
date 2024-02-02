@@ -38,6 +38,8 @@ const buttonDefense = document.querySelector('.btn-defense')
 const maleVoice = new Audio('../audio/male-voice.mp3')
 const femaleVoice = new Audio('../audio/female-voice-angry.mp3')
 
+const pencilSound = new Audio('../audio/pencil-sound.wav')
+
 const audioClose = document.querySelector('.audio-close')
 const audioOpen = document.querySelector('.audio-open')
 const metalSound = document.querySelector('.metal-sound')
@@ -143,6 +145,7 @@ letter1.addEventListener('click', () => {
 closeLetter.addEventListener('click', () => {
     letterWindow1.style.display = 'none'
     registerIndex.style.display = 'flex'
+    pencilSound.play()
 })
 
 
@@ -238,12 +241,14 @@ const characters = [
     
     {
         name: "Matheo",
-        age: "42 anos",
+        age: "42",
         work: "Ferreiro",
         religion: "Católico Apostólico Romano",
+
         acusation: "Fui encomendar alguns garfos de ferro com Matheo. Quando lá cheguei, o encontrei conversando com Jacques, o vagabundo. O ferreiro afirmava que Jesus nasceu humano, e só após o batismo se tornaria divino. Achei curioso, então n'outro dia fui consultar o padre que instruiu-me a delatar a heresia.",
 
         defense: 'Mas todos nós sabemos que Jesus é cem por cento homem! o próprio padre disse isso no domingo passado! E um conhecido meu, que por sinal é muito inteligente, me ensinou que foi só após batismo que Ele recebeu a divindade.',
+        
         sonOf: "Ângelo e Tereza (falecidos)",
 
         picture: "./images/characters/matheo.png",

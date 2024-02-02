@@ -1,23 +1,16 @@
-button, body, h3, h1, img {
+ button, body, h3, h1, img {
     cursor: none;
 }
 
-.cursor-dot {
-    width: 12px;
-    height: 12px;
-    background-image: linear-gradient(red, black);
+.cursor-outline {
+    width: 10px;
+    height: 60px;
+    
 }
 
 .cursor-outline {
-    width: 30px;
-    height: 30px;
-    border: 2px solid hsla(0,0,100%,0.5);
-}
-
-.cursor-outline,
-.cursor-dot {
     position: fixed;
-    top: 0;
+    top: 22px;
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;

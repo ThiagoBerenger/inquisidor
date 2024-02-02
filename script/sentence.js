@@ -39,8 +39,6 @@ backButton.addEventListener('click', () => {
 })
 
 
-
-
 // funções
 function selectPunishment(element) {
     if(element.style.borderLeft === '') {
@@ -53,22 +51,19 @@ function selectPunishment(element) {
 
 // cursor ================
 
-const cursorDot = document.querySelector('.cursor-dot')
-const cursorOutline = document.querySelector('.cursor-outline')
+const cursorDot = document.querySelector('.cursor-dot');
+const cursorOutline = document.querySelector('.cursor-outline');
 
-window.addEventListener('mousemove', function (e) {
-    const posX = e.clientX
-    const posY = e.clientY
+window.addEventListener('mousemove', updateCursorPosition);
+window.addEventListener('scroll', updateCursorPosition);
 
-    cursorDot.style.left = `${posX}px`
-    cursorDot.style.top = `${posY}px`
+function updateCursorPosition(e) {
+    const posX = e.clientX + window.scrollX;
+    const posY = e.clientY + window.scrollY;
 
-     cursorOutline.style.left = `${posX}`
-     cursorOutline.style.top = `${posY}`
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
 
-    cursorOutline.animate({
-        left: `${posX}px`,
-        top: `${posY}px`
-    }, {duration: 500, fill: 'forwards'})
-
-})
+    cursorOutline.style.left = `${posX}px`;
+    cursorOutline.style.top = `${posY}px`;
+}

@@ -188,6 +188,15 @@ button:active {
     line-height: 1.5rem;
 }
 
+.hypothesis-div h4 {
+    transition: .2s ease;
+}
+
+.hypothesis-div h4:hover{
+    color: red;
+    transform: scale(1.1,1.1);
+}
+
 
 /* book */
 

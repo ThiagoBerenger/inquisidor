@@ -204,11 +204,7 @@ writeInformation.addEventListener('click', () => {
     missionDialogueWindow.style.display = 'none'
     missionWindow.style.display = 'flex'    
     pencilSound.play()
-    function taskTransition() {
-        newTask1.innerHTML = characters[0].newTask
-    }
-
-    setInterval (taskTransition, 1000)
+    newTask1.innerHTML = characters[0].newTask    
 })
 
 // nova anotação no menu de missão

@@ -161,6 +161,7 @@ hypotesisGiuseppe.addEventListener('click', () => {
     registerWindow.style.display = 'flex'
     letterWindow2.style.display = 'flex' 
     registerIndex.style.display = 'none'
+    closeAllLetters(closeLetter2, letterWindow2)
 })
 
 registerButton.addEventListener('click', () => {

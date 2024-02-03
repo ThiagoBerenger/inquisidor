@@ -11,6 +11,8 @@ const backButton = document.querySelector('.pena-back-btn')
 const condemnButton = document.querySelector('.condemn-btn')
 const condemnWindow = document.querySelector('#condemn-window')
 
+const nextMission = document.querySelector('.next-mission')
+
 // ---
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -73,20 +75,37 @@ function checkPunishmentSelection() {
 }
 
 condemnButton.addEventListener('click', () => {
-        localStorage.setItem('punishment', JSON.stringify(punishment));
-        bellSound.play();
 
-        punishmentMessage.innerHTML = punishment
+    localStorage.setItem('punishment', JSON.stringify(punishment));
+    bellSound.play();
 
-        condemnWindow.style.display = 'block'
-        registerButton.style.display = 'none'
-        missionButton.style.display = 'none'
-        compassButton.style.display = 'none'
-        bookButton.style.display = 'none'
-        choiceButton.style.display = 'none'
-        musicButton.style.display = 'none'
+    punishmentMessage.innerHTML = punishment
+
+    condemnWindow.style.display = 'block'
+    registerButton.style.display = 'none'
+    missionButton.style.display = 'none'
+    compassButton.style.display = 'none'
+    bookButton.style.display = 'none'
+    choiceButton.style.display = 'none'
+    musicButton.style.display = 'none'
     }
 )
+
+nextMission.addEventListener('click', () => {
+    condemnWindow.style.display = 'none'
+    choiceWindow.style.display = 'none'
+    information.style.display = 'flex'
+    registerButton.style.display = 'flex'
+    missionButton.style.display = 'flex'
+    compassButton.style.display = 'flex'
+    bookButton.style.display = 'flex'
+    choiceButton.style.display = 'flex'
+    musicButton.style.display = 'flex'
+    
+    audioClose.play()
+    localStorage.clear() 
+    missionTwo()
+})
 
 
 // funções

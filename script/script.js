@@ -1,4 +1,6 @@
 // variaveis
+const startMenu = document.querySelector('#start-menu')
+const screenGame = document.querySelector('#screen')
 const information = document.querySelector('#information-suspect')
 
 const bookButton = document.querySelector('.book-button')
@@ -81,7 +83,10 @@ const satanismLink = document.querySelector('.satanism');
 // iniciação
 
  document.addEventListener('DOMContentLoaded', () => {
-     information.style.display = 'flex'
+    
+     startMenu.style.display = 'flex'
+     screenGame.style.display = 'none'
+     information.style.display = 'none'
      bookOpen.style.display = 'none'
      choiceWindow.style.display = 'none'
      suspectDocument.style.display = 'none'
@@ -383,6 +388,7 @@ function missionOne() {
     pictureCharacter.src = characters[0].picture 
     acusatorCharacter.src = characters[0].acusator 
 }
+
 
 missionOne()
 

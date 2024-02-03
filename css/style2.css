@@ -86,7 +86,7 @@
     background-image: url('../images/paper-2.jpg');
     position: absolute;
     height: 636px;
-    width: 1195px;
+    width: 1196px;
 }
 
 #condemn-window h1 {
@@ -94,7 +94,20 @@
     padding: 12rem 0 2rem 12rem;
 }
 
+#condemn-window img {
+    opacity: 90%;
+    position: absolute;
+    top: 8.5rem;
+    right: 0rem;
+}
+
 #condemn-window span {
     font-size: 26px;
     padding: 12rem 0 2rem 12rem;
+}
+
+.next-mission {
+    position: absolute;
+    left: 20rem;
+    top: 20rem;
 }

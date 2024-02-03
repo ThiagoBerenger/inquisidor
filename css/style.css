@@ -9,6 +9,31 @@
     letter-spacing: 2px;
 }
 
+/* start menu */
+
+#start-menu {
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0d0d0d;
+    height: 50vh;
+    width: 30%;
+    gap: 3rem;
+}
+
+#start-menu h1 {
+    font-size: 52px;
+}
+
+#start-menu input {
+    border: red 1px solid;
+    padding: 1rem 4rem;
+    cursor: none;
+}
+
 #hero {
     display: flex;
     flex-direction: column;

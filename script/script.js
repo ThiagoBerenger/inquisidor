@@ -4,6 +4,8 @@ const information = document.querySelector('#information-suspect')
 const bookButton = document.querySelector('.book-button')
 const bookOpen = document.querySelector('#book')
 
+const compassButton = document.querySelector('.compass-button')
+
 const choiceWindow = document.querySelector('#choice-window')
 const choiceButton = document.querySelector('.choice-button')
 
@@ -22,6 +24,10 @@ const letter1 = document.querySelector('.letter-1')
 const letter2 = document.querySelector('.letter-2')
 const closeLetter = document.querySelector('.close-letter')
 const closeLetter2 = document.querySelector('.close-letter-2')
+
+// anotar info 
+const writeInformation = document.querySelector('.write-info')
+const missionDialogueWindow = document.querySelector('#mission-dialogue')
 
 
 const suspectDocument = document.querySelector('.suspect-document')
@@ -69,6 +75,7 @@ const satanismLink = document.querySelector('.satanism');
      defenseDocument.style.display = 'none'
      registerWindow.style.display = 'none'
      missionWindow.style.display = 'none'
+     missionDialogueWindow.style.display = 'none'
      mainMusic.play()
  })
 
@@ -120,6 +127,12 @@ bookButton.addEventListener('click', () => {
 })
 
 missionButton.addEventListener('click', () => {
+    missionDialogueWindow.style.display = 'flex'
+})
+
+// compass button --
+
+compassButton.addEventListener('click', () => {
     if(missionWindow.style.display === 'none') {
         missionWindow.style.display = 'flex'
         audioOpen.play()
@@ -185,6 +198,13 @@ satanismLink.addEventListener('click', () => {
     satanismChapter.scrollIntoView({ behavior: 'smooth' })
 });
 
+// interação personagens
+
+writeInformation.addEventListener('click', () => {
+    missionDialogueWindow.style.display = 'none'
+
+})
+
 
 buttonAcusation.addEventListener('click', () => {
 
@@ -248,6 +268,8 @@ const sonOfResponse = document.querySelector('.son-response')
 const religionResponse = document.querySelector('.religion-response')
 const mainMissionResponse = document.querySelector('.mission-response')
 
+const mainDialogueResponse = document.querySelector('.main-dialogue-1')
+
 const pictureCharacter = document.querySelector('.picture-character')
 const acusatorCharacter = document.querySelector('.acusator-character')
 
@@ -275,7 +297,7 @@ const characters = [
 
         mainMission: 'Perguntar sobre Guilhermo e Giuseppe',
 
-        mainDialogue: "Eu nunca ouvi falar desse garoto, que Deus o tenha, mas Giuseppe cresceu na mesma vila que eu. Ele teria se tornado um homem comum se não fosse a morte de seus pais aos 11 anos. Acho que ambos foram tísicos... acontece."
+        mainDialogue: "Matheo: Desse mendigo nada sei, porém o garoto é afilhado do meu primo Luc."
     },
 
     {
@@ -321,6 +343,7 @@ function missionOne() {
     defeseResponse.innerHTML = characters[0].defense    
     religionResponse.innerHTML = characters[0].religion 
     mainMissionResponse.innerHTML = characters[0].mainMission 
+    mainDialogueResponse.innerHTML = characters[0].mainDialogue
 
     pictureCharacter.src = characters[0].picture 
     acusatorCharacter.src = characters[0].acusator 

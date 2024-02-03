@@ -17,3 +17,44 @@
     z-index: 99;
     pointer-events: none;
 }
+
+/* --------DIALOGUE-------- */
+
+
+#mission-dialogue {
+    align-self: center;
+    position: absolute;
+    height: 600px;
+    width: 1200px;
+    border: 4px solid white;
+    background-image: url('../images/paper-2.jpg');
+    z-index: 1;
+    color: #0d0d0d;
+    display: flex;
+}
+
+#mission-dialogue img {
+    position: absolute;
+    top: 4rem;
+    opacity: 94%;
+}
+
+
+#mission-dialogue button {
+    position: absolute;
+    top: 24.2rem;
+    left: 31.2rem;
+}
+
+
+.main-dialogue-1 {
+    margin-left: 31rem;
+    padding: 1rem;
+    font-size: 22px;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    background-color: white;
+    border: 1px solid #0d0d0d;
+    border-radius: 10px 10px 10px 10px;
+}

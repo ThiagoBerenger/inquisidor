@@ -293,6 +293,20 @@ button:active {
     border-radius: 4px;       
   }
 
+  /* COMPASS */
+
+.compass-button img {
+    width: 100px;
+    transform: rotate(5deg);
+    transition: .5s ease;
+  }
+
+.compass-button img:hover {
+    transform: rotate(-5deg);
+    transform: translateY(-15px);
+}
+
+
  /* DIÁRIO DE MISSÃO */ 
 
  #register-window {
@@ -502,15 +516,15 @@ button:active {
     transition: .5s ease;
 }
 
+.book-button img:hover {
+    transform: rotate(-5deg);
+    transform: translateY(-15px);
+}
+
 .images-book {
     display: flex;
     flex-direction: row;
     gap: 4rem;
-}
-
-.book-button img:hover {
-    transform: rotate(-5deg);
-    transform: translateY(-15px);
 }
 
 .choice-button img {

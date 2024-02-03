@@ -49,6 +49,17 @@ function selectPunishment(element) {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 // cursor ================
 
 const cursorDot = document.querySelector('.cursor-dot');

@@ -61,6 +61,7 @@ const buttonDefense = document.querySelector('.btn-defense')
 const maleVoice = new Audio('../audio/male-voice.mp3')
 const femaleVoice = new Audio('../audio/female-voice-angry.mp3')
 
+const bellSound = new Audio('../audio/church-bell.mp3')
 const pencilSound = new Audio('../audio/pencil-sound.wav')
 
 const audioClose = document.querySelector('.audio-close')
@@ -89,7 +90,7 @@ const satanismLink = document.querySelector('.satanism');
      registerWindow.style.display = 'none'
      missionWindow.style.display = 'none'
      missionDialogueWindow.style.display = 'none'
-     mainMusic.play()
+    //  mainMusic.play()
  })
 
 
@@ -319,9 +320,9 @@ const characters = [
         work: "Ferreiro",
         religion: "Católico Apostólico Romano",
 
-        acusation: "Fui encomendar uma cruz de ferro com esse ferreiro aí! Porém ele se negou diversas vezes, disse que era errado ter ícones de Jesus ou seja lá quem for.",
+        acusation: "Fui encomendar uma cruz de ferro com esse ferreiro aí! Porém ele se negou diversas vezes, disse que era errado ter ícones de Jesus, Nossa Senhora ou seja lá quem for.",
 
-        defense: 'O meu trabalho não pode alimentar a idolatria.',
+        defense: 'Não quero que a minha forja alimente a idolatria cega dessas pessoas.',
 
         sonOf: "Ângelo e Tereza (falecidos)",
 
@@ -334,7 +335,7 @@ const characters = [
 
         newTask: 'Devo interrogar este tal de Luc',
 
-        correctPunishment: 'confissão'
+        correctPunishment: 'confess'
     },
 
     {
@@ -385,6 +386,25 @@ function missionOne() {
 
 missionOne()
 
+
+// cursor ================
+
+const cursorDot = document.querySelector('.cursor-dot');
+const cursorOutline = document.querySelector('.cursor-outline');
+
+window.addEventListener('mousemove', updateCursorPosition);
+window.addEventListener('scroll', updateCursorPosition);
+
+function updateCursorPosition(e) {
+    const posX = e.clientX + window.scrollX;
+    const posY = e.clientY + window.scrollY;
+
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
+
+    cursorOutline.style.left = `${posX}px`;
+    cursorOutline.style.top = `${posY}px`;
+}
 
 
 

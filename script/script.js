@@ -202,8 +202,16 @@ satanismLink.addEventListener('click', () => {
 
 writeInformation.addEventListener('click', () => {
     missionDialogueWindow.style.display = 'none'
+    missionWindow.style.display = 'flex'    
+    pencilSound.play()
+    function taskTransition() {
+        newTask1.innerHTML = characters[0].newTask
+    }
 
+    setInterval (taskTransition, 1000)
 })
+
+// nova anotação no menu de missão
 
 
 buttonAcusation.addEventListener('click', () => {
@@ -269,6 +277,7 @@ const religionResponse = document.querySelector('.religion-response')
 const mainMissionResponse = document.querySelector('.mission-response')
 
 const mainDialogueResponse = document.querySelector('.main-dialogue-1')
+const newTask1 = document.querySelector('.new-task')
 
 const pictureCharacter = document.querySelector('.picture-character')
 const acusatorCharacter = document.querySelector('.acusator-character')
@@ -297,7 +306,9 @@ const characters = [
 
         mainMission: 'Perguntar sobre Guilhermo e Giuseppe',
 
-        mainDialogue: "Matheo: Desse mendigo nada sei, porém o garoto é afilhado do meu primo Luc."
+        mainDialogue: "Matheo: Desse mendigo nada sei, porém o garoto é afilhado do meu primo Luc.",
+
+        newTask: 'Devo interrogar este tal de Luc'
     },
 
     {
@@ -344,6 +355,7 @@ function missionOne() {
     religionResponse.innerHTML = characters[0].religion 
     mainMissionResponse.innerHTML = characters[0].mainMission 
     mainDialogueResponse.innerHTML = characters[0].mainDialogue
+    
 
     pictureCharacter.src = characters[0].picture 
     acusatorCharacter.src = characters[0].acusator 

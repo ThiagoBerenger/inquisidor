@@ -89,3 +89,12 @@
     width: 1195px;
 }
 
+#condemn-window h1 {
+    font-size: 32px;
+    padding: 12rem 0 2rem 12rem;
+}
+
+#condemn-window span {
+    font-size: 26px;
+    padding: 12rem 0 2rem 12rem;
+}

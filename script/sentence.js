@@ -18,9 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
     condemnButton.disabled = true;
 });
 
+const punishmentMessage = document.querySelector('.punishment-message')
 let punishment = []
 
-// eventos
+
 rosary.addEventListener('click', () => {
     selectPunishment(rosary)
     checkPunishmentSelection()
@@ -74,6 +75,8 @@ function checkPunishmentSelection() {
 condemnButton.addEventListener('click', () => {
         localStorage.setItem('punishment', JSON.stringify(punishment));
         bellSound.play();
+
+        punishmentMessage.innerHTML = punishment
 
         condemnWindow.style.display = 'block'
         registerButton.style.display = 'none'

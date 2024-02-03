@@ -318,9 +318,9 @@ const characters = [
         work: "Ferreiro",
         religion: "Católico Apostólico Romano",
 
-        acusation: "Fui encomendar alguns garfos de ferro com Matheo. Quando lá cheguei, o encontrei conversando com Jacques, o vagabundo. O ferreiro afirmava que Jesus nasceu humano, e só após o batismo se tornaria divino. Achei curioso, então n'outro dia fui consultar o padre que instruiu-me a delatar a heresia.",
+        acusation: "Fui encomendar uma cruz de ferro com esse ferreiro aí! Porém ele se negou diversas vezes, disse que era errado ter ícones de Jesus ou seja lá quem for.",
 
-        defense: 'Mas todos nós sabemos que Jesus é cem por cento homem! o próprio padre disse isso no domingo passado! E um conhecido meu, que por sinal é muito inteligente, me ensinou que foi só após batismo que Ele recebeu a divindade.',
+        defense: 'O meu trabalho não pode alimentar a idolatria.',
 
         sonOf: "Ângelo e Tereza (falecidos)",
 
@@ -331,7 +331,9 @@ const characters = [
 
         mainDialogue: "Matheo: Desse mendigo nada sei, porém o garoto é afilhado do meu primo Luc.",
 
-        newTask: 'Devo interrogar este tal de Luc'
+        newTask: 'Devo interrogar este tal de Luc',
+
+        correctPunishment: 'confissão'
     },
 
     {

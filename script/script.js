@@ -4,6 +4,11 @@ const information = document.querySelector('#information-suspect')
 const bookButton = document.querySelector('.book-button')
 const bookOpen = document.querySelector('#book')
 
+const hereticsChapter = document.querySelector('.heretics-chapter')
+const witchcraftChaper = document.querySelector('.witchcraft-chapter')
+const satanismChapter = document.querySelector('.satanism-chapter')
+
+
 const compassButton = document.querySelector('.compass-button')
 
 const choiceWindow = document.querySelector('#choice-window')
@@ -29,6 +34,14 @@ const closeLetter2 = document.querySelector('.close-letter-2')
 const writeInformation = document.querySelector('.write-info')
 const missionDialogueWindow = document.querySelector('#mission-dialogue')
 
+// hipotese ----
+const hypotesisGiuseppe = document.querySelector('.hypothesis-giuseppe')
+const hypotesisHeresy = document.querySelector('.hypothesis-heresy')
+const hypotesisWichcraft = document.querySelector('.hypothesis-witchcraft')
+const hypotesisSatanism = document.querySelector('.hypothesis-satanism')
+
+
+// ------------------
 
 const suspectDocument = document.querySelector('.suspect-document')
 const buttonInfo = document.querySelector('.btn-inspectDoc')
@@ -144,6 +157,12 @@ compassButton.addEventListener('click', () => {
 
 // register ========
 
+hypotesisGiuseppe.addEventListener('click', () => {
+    registerWindow.style.display = 'flex'
+    letterWindow2.style.display = 'flex' 
+    registerIndex.style.display = 'none'
+})
+
 registerButton.addEventListener('click', () => {
     if(registerWindow.style.display === 'none') {
         registerWindow.style.display = 'flex'
@@ -179,22 +198,30 @@ function closeAllLetters(button, letter) {
         pencilSound.play()
     })
 }
+
+function redirectToRegister (button, register, cap) {
+    button.addEventListener('click', () => {
+        register.style.display = 'flex' 
+        cap.scrollIntoView({})
+    })
+}
+
+redirectToRegister(hypotesisHeresy, bookOpen, hereticsChapter)
+redirectToRegister(hypotesisWichcraft, bookOpen, witchcraftChaper)
+redirectToRegister(hypotesisSatanism, bookOpen, satanismChapter)
  
 
 // capitulos livro
 
 heresyLink.addEventListener('click', () => {
-    const hereticsChapter = document.querySelector('.heretics-chapter')
     hereticsChapter.scrollIntoView({ behavior: 'smooth' })
 });
 
 witchcraftLink.addEventListener('click', () => {
-    const witchcraftChaper = document.querySelector('.witchcraft-chapter')
     witchcraftChaper.scrollIntoView({ behavior: 'smooth' })
 });
 
 satanismLink.addEventListener('click', () => {
-    const satanismChapter = document.querySelector('.satanism-chapter')
     satanismChapter.scrollIntoView({ behavior: 'smooth' })
 });
 
@@ -337,10 +364,6 @@ const characters = [
 
 // funções
 
-function startGame() {
-    console.log('começou')
-}
-
 function missionOne() {
     nameResponse.innerHTML = characters[0].name
     sonOfResponse.innerHTML = characters[0].sonOf
@@ -357,7 +380,6 @@ function missionOne() {
     acusatorCharacter.src = characters[0].acusator 
 }
 
-startGame()
 missionOne()
 
 

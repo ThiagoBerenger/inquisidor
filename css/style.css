@@ -153,6 +153,11 @@ button:active {
     padding: 2rem 0 0 2rem;
 }
 
+.mission-content h5 {
+    padding: 1rem 0 1rem 0;
+    font-size: 18px;
+}
+
 .mission-content img {
     opacity: 95%;
     width: 90px;
@@ -360,7 +365,7 @@ button:active {
 }
 
 .close-letter img {
-    width: 100px;
+    width: 50px;
     opacity: 90%;
 }
 

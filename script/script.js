@@ -355,7 +355,7 @@ const characters = [
 
         acusation: "Fui encomendar uma cruz de ferro com esse ferreiro aí! Porém ele se negou diversas vezes, disse que era errado ter ícones de Jesus, Nossa Senhora ou seja lá quem for.",
 
-        defense: 'Não quero que a minha forja alimente a idolatria cega dessas pessoas.',
+        defense: 'Meu primo disse que minha forja fora feita para alimentar a idolatria cega dessas pessoas.',
 
         sonOf: "Ângelo e Tereza (falecidos)",
 
@@ -376,17 +376,32 @@ const characters = [
         age: "32 anos",
         work: "Carpinteiro",
         religion: "Católico Apostólico Romano",
-        acusation: "Heresia",
-        sonOf: "Joaquim e Maria"
+
+        acusation: "Tenho duas questões para tratar contigo. Uma, teu primo Matheo te entregaste, tu acusara a Santa Igreja de Idolatria? Outra, Você foi patrinho do falecido Guilhermo",
+
+        defense: 'Amaldiçoada seja a língua solta de Matheo! e amaldiçoada seja a Igreja que deveria queimar a bruxa que matou meu afilhado e não se preocupar com o que creio!',
+
+        sonOf: "Joaquim e Maria",
+
+        picture: './images/characters/Luc-picture.png',
+        acusator: './images/characters/',
+
+        mainMission: 'Questionar patrinho de Guilhermo',
+
+        mainDialogue: 'sim, eu sou... eu era patrinho do pequeno Guilhermo. Acompanhei todo o enterro. Com certeza foi morto por uma bruxa! Guilhermo tinha uma marca de bruxaria na barriga, não lembro-me direito do desenho... talvez Marta se lembre, uma mãe não esquece de nenhum detalhe até que a última pá de terra cubra o caixão do filho.',
+
+        newTask: 'Devo interrogar Marta, mãe de Guilhermo, e perguntar sobre a tal marca',
+
+        correctPunishment: 'confess, rosary'
     },
 
     {
-        name: "Jacques",
-        age: "21 anos",
-        work: "Desempregado",
+        name: "Marta",
+        age: "24 anos",
+        work: "Costureira",
         religion: "Católico Apostólico Romano",
-        acusation: "Satanismo",
-        sonOf: "Alexandre e Maria"
+        acusation: "Mãe de Guilhermo",
+        sonOf: "Mariano e Maria"
     },
 
     {

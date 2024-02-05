@@ -266,7 +266,7 @@ writeInformation.addEventListener('click', () => {
     missionDialogueWindow.style.display = 'none'
     missionWindow.style.display = 'flex'    
     pencilSound.play()
-    newTask1.innerHTML = characters[0].newTask    
+    newTask.innerHTML = characters[i].newTask    
 })
 
 // nova anotação no menu de missão
@@ -335,7 +335,7 @@ const religionResponse = document.querySelector('.religion-response')
 const mainMissionResponse = document.querySelector('.mission-response')
 
 const mainDialogueResponse = document.querySelector('.main-dialogue-1')
-const newTask1 = document.querySelector('.new-task')
+const newTask = document.querySelector('.new-task')
 
 const pictureCharacter = document.querySelector('.picture-character')
 const acusatorCharacter = document.querySelector('.acusator-character')
@@ -384,7 +384,7 @@ const characters = [
         sonOf: "Joaquim e Maria",
 
         picture: './images/characters/Luc-picture.png',
-        acusator: './images/characters/',
+        acusator: './images/characters/inquisidor-picture.png',
 
         mainMission: 'Questionar patrinho de Guilhermo',
 
@@ -426,6 +426,7 @@ function missionOne() {
     religionResponse.innerHTML = characters[0].religion 
     mainMissionResponse.innerHTML = characters[0].mainMission 
     mainDialogueResponse.innerHTML = characters[0].mainDialogue
+    newTask.innerHTML = characters[0].newTask
     
 
     pictureCharacter.src = characters[0].picture 

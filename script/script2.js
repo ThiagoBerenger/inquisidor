@@ -8,6 +8,7 @@ function missionTwo() {
     religionResponse.innerHTML = characters[1].religion 
     mainMissionResponse.innerHTML = characters[1].mainMission 
     mainDialogueResponse.innerHTML = characters[1].mainDialogue
+    newTask.innerHTML = characters[1].newTask
     
 
     pictureCharacter.src = characters[1].picture 

@@ -94,6 +94,7 @@ condemnButton.addEventListener('click', () => {
 nextMission.addEventListener('click', () => {
     condemnWindow.style.display = 'none'
     choiceWindow.style.display = 'none'
+    
     information.style.display = 'flex'
     registerButton.style.display = 'flex'
     missionButton.style.display = 'flex'

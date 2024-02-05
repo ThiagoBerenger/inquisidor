@@ -2,6 +2,9 @@
 const startMenu = document.querySelector('#start-menu')
 const screenGame = document.querySelector('#screen')
 const information = document.querySelector('#information-suspect')
+const startGameButton = document.querySelector('.start-game')
+const playerInfo = document.querySelector('.player-info')
+const playerName = document.querySelector('.player-name')
 
 const bookButton = document.querySelector('.book-button')
 const bookOpen = document.querySelector('#book')
@@ -80,6 +83,31 @@ const witchcraftLink = document.querySelector('.witchcraft');
 const satanismLink = document.querySelector('.satanism');
 
 
+// Start Game
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     if (playerName.value <= 4) {
+//         startGameButton.style.visibility = 'hidden';
+//         startGameButton.disabled = true;
+//     } else {
+//         startGameButton.style.visibility = 'visible';
+//         startGameButton.disabled = false; 
+//     }
+// })
+
+startGameButton.addEventListener('click', () => {
+    startMenu.style.display = 'none'
+    screenGame.style.display = 'flex'
+    information.style.display = 'flex'
+
+    localStorage.setItem('Player_Name', playerName.value)
+    playerInfo.innerHTML = playerName.value
+
+    missionOne()
+})
+
+
+
 // iniciação
 
  document.addEventListener('DOMContentLoaded', () => {
@@ -95,7 +123,7 @@ const satanismLink = document.querySelector('.satanism');
      registerWindow.style.display = 'none'
      missionWindow.style.display = 'none'
      missionDialogueWindow.style.display = 'none'
-    //  mainMusic.play()
+     mainMusic.play()
  })
 
 
@@ -388,9 +416,6 @@ function missionOne() {
     pictureCharacter.src = characters[0].picture 
     acusatorCharacter.src = characters[0].acusator 
 }
-
-
-missionOne()
 
 
 // cursor ================

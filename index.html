@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/animation.css">
     <!-- script -->
     <script src="script/script.js" defer></script>
+    <script src="script/script2.js" defer></script>
     <!-- sentence -->
     <script src="script/sentence.js" defer></script>
 </head>
@@ -21,16 +22,20 @@
     <div id="hero">
         <!-- Menu inicial -->
         <div id="start-menu">
+            <img src="images/login-background.png" alt="background">
             <h1>Inquisidor</h1>
-            <input type="text" placeholder="Seu Nome" class="player-name">
+            <div class="login-box">
+                <input type="text" placeholder="Seu Nome" class="player-name">
+                <button class="start-game">Iniciar</button>
+            </div>
         </div>
 
         <div id="screen">
             <!-- Nome e Socre do jogador -->
             <div class="top-details">
-                <div class="player-name">
-                    <h1>player name</h1>
-                    <p>Profissão: Inquisidor</p>
+                <div>
+                    <h1 class="player-info">player name</h1>
+                    <p>Inquisidor</p>
                 </div>
                 <div class="player-score">
                     <h1>0 Damnation</h1>

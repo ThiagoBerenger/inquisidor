@@ -19,18 +19,31 @@
     justify-content: center;
     flex-direction: column;
     background-color: #0d0d0d;
-    height: 50vh;
-    width: 30%;
-    gap: 3rem;
+    height: 50vh;    
+}
+
+#start-menu img {
+    border: 1px solid white; 
 }
 
 #start-menu h1 {
     font-size: 52px;
+    padding: 1rem;
+}
+
+#start-menu button {
+    height: 50px;
+}
+
+.login-box {
+    display: flex;
+    gap: 1rem;
 }
 
 #start-menu input {
     border: red 1px solid;
     padding: 1rem 4rem;
+    margin-bottom: 1rem;
     cursor: none;
 }
 

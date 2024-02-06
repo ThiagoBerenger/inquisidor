@@ -13,7 +13,6 @@ const hereticsChapter = document.querySelector('.heretics-chapter')
 const witchcraftChaper = document.querySelector('.witchcraft-chapter')
 const satanismChapter = document.querySelector('.satanism-chapter')
 
-
 const compassButton = document.querySelector('.compass-button')
 
 const choiceWindow = document.querySelector('#choice-window')
@@ -63,8 +62,6 @@ const defenseDocument = document.querySelector('.defense-document')
 const buttonDefense = document.querySelector('.btn-defense')
 
 // variavel audio
-const maleVoice = new Audio('../audio/male-voice.mp3')
-const femaleVoice = new Audio('../audio/female-voice-angry.mp3')
 
 const bellSound = new Audio('../audio/church-bell.mp3')
 const pencilSound = new Audio('../audio/pencil-sound.wav')
@@ -123,7 +120,7 @@ startGameButton.addEventListener('click', () => {
      registerWindow.style.display = 'none'
      missionWindow.style.display = 'none'
      missionDialogueWindow.style.display = 'none'
-     mainMusic.play()
+    //  mainMusic.play()
  })
 
 
@@ -271,31 +268,30 @@ writeInformation.addEventListener('click', () => {
 
 // nova anotação no menu de missão
 
+// audio acuse/defense
 
 buttonAcusation.addEventListener('click', () => {
-
-    if(acusationDocument.style.display === 'none') {
-        acusationDocument.style.display = 'flex'
-        defenseDocument.style.display = 'none'
-        audioOpen.play()
-        femaleVoice.play()
-    } else {
-        acusationDocument.style.display = 'none'
-        audioClose.play()
-    }
+    toggleDisplay(acusationDocument, defenseDocument)
+    
 })
 
 buttonDefense.addEventListener('click', () => {
-    if(defenseDocument.style.display === 'none') {
-        defenseDocument.style.display = 'flex'
-        acusationDocument.style.display = 'none'
+    toggleDisplay(defenseDocument, acusationDocument)
+})
+
+function toggleDisplay(showElement, hideElement) {
+    if(showElement.style.display === 'none') {
+        showElement.style.display = 'flex'
+        hideElement.style.display = 'none'
         audioOpen.play()
-        maleVoice.play()
     } else {
-        defenseDocument.style.display = 'none'
+        showElement.style.display = 'none'
         audioClose.play()
     }
-})
+}
+
+
+// -----------
 
 choiceButton.addEventListener('click', () => {
     
@@ -342,6 +338,7 @@ const acusatorCharacter = document.querySelector('.acusator-character')
 
 const buttonAge = document.querySelector('.btn-2')
 const buttonWork = document.querySelector('.btn-3')
+
 
 // --- suspeitos --
 
@@ -426,9 +423,9 @@ function missionOne() {
     religionResponse.innerHTML = characters[0].religion 
     mainMissionResponse.innerHTML = characters[0].mainMission 
     mainDialogueResponse.innerHTML = characters[0].mainDialogue
+    
     newTask.innerHTML = characters[0].newTask
     
-
     pictureCharacter.src = characters[0].picture 
     acusatorCharacter.src = characters[0].acusator 
 }

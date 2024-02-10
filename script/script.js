@@ -121,6 +121,10 @@ startGameButton.addEventListener('click', () => {
      missionWindow.style.display = 'none'
      missionDialogueWindow.style.display = 'none'
     //  mainMusic.play()
+
+    buttonAcusation.classList.add('disabled')
+    buttonDefense.classList.add('disabled')
+    missionButton.classList.add('disabled')
  })
 
 
@@ -134,6 +138,9 @@ buttonInfo.addEventListener('click', () => {
         suspectDocument.style.display = 'none'
         audioClose.play()
     }
+
+    buttonAcusation.classList.remove('disabled')
+
 })
 
 // close buttons
@@ -185,6 +192,7 @@ compassButton.addEventListener('click', () => {
         audioClose.play()
     }
 })
+
 
 // register ========
 
@@ -263,7 +271,7 @@ writeInformation.addEventListener('click', () => {
     missionDialogueWindow.style.display = 'none'
     missionWindow.style.display = 'flex'    
     pencilSound.play()
-    newTask.innerHTML = characters[i].newTask    
+    newTask.innerHTML = characters[i].newTask
 })
 
 // nova anotação no menu de missão
@@ -272,11 +280,13 @@ writeInformation.addEventListener('click', () => {
 
 buttonAcusation.addEventListener('click', () => {
     toggleDisplay(acusationDocument, defenseDocument)
+    buttonDefense.classList.remove('disabled')
     
 })
 
 buttonDefense.addEventListener('click', () => {
     toggleDisplay(defenseDocument, acusationDocument)
+    missionButton.classList.remove('disabled')
 })
 
 function toggleDisplay(showElement, hideElement) {

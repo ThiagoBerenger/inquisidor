@@ -179,6 +179,7 @@ bookButton.addEventListener('click', () => {
 
 missionButton.addEventListener('click', () => {
     missionDialogueWindow.style.display = 'flex'
+    newTask.innerHTML = characters[0].newTask
 })
 
 // compass button --
@@ -362,7 +363,7 @@ const characters = [
 
         acusation: "Fui encomendar uma cruz de ferro com esse ferreiro aí! Porém ele se negou diversas vezes, disse que era errado ter ícones de Jesus, Nossa Senhora ou seja lá quem for.",
 
-        defense: 'Meu primo disse que minha forja fora feita para alimentar a idolatria cega dessas pessoas.',
+        defense: 'Meu primo disse que minha forja não fora feita para alimentar a idolatria cega dessas pessoas.',
 
         sonOf: "Ângelo e Tereza (falecidos)",
 
@@ -433,8 +434,6 @@ function missionOne() {
     religionResponse.innerHTML = characters[0].religion 
     mainMissionResponse.innerHTML = characters[0].mainMission 
     mainDialogueResponse.innerHTML = characters[0].mainDialogue
-    
-    newTask.innerHTML = characters[0].newTask
     
     pictureCharacter.src = characters[0].picture 
     acusatorCharacter.src = characters[0].acusator 

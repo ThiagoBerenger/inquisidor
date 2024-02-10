@@ -125,6 +125,8 @@ startGameButton.addEventListener('click', () => {
     buttonAcusation.classList.add('disabled')
     buttonDefense.classList.add('disabled')
     missionButton.classList.add('disabled')
+    choiceButton.classList.add('disabled')
+    compassButton.classList.add('disabled')
  })
 
 
@@ -179,7 +181,6 @@ bookButton.addEventListener('click', () => {
 
 missionButton.addEventListener('click', () => {
     missionDialogueWindow.style.display = 'flex'
-    newTask.innerHTML = characters[0].newTask
 })
 
 // compass button --
@@ -271,8 +272,9 @@ satanismLink.addEventListener('click', () => {
 writeInformation.addEventListener('click', () => {
     missionDialogueWindow.style.display = 'none'
     missionWindow.style.display = 'flex'    
-    pencilSound.play()
-    newTask.innerHTML = characters[i].newTask
+    compassButton.classList.remove('disabled')
+    choiceButton.classList.remove('disabled')
+    pencilSound.play()    
 })
 
 // nova anotação no menu de missão
@@ -434,6 +436,7 @@ function missionOne() {
     religionResponse.innerHTML = characters[0].religion 
     mainMissionResponse.innerHTML = characters[0].mainMission 
     mainDialogueResponse.innerHTML = characters[0].mainDialogue
+    newTask.innerHTML = characters[0].newTask
     
     pictureCharacter.src = characters[0].picture 
     acusatorCharacter.src = characters[0].acusator 
